@@ -1324,6 +1324,10 @@ spec:
                 cacheMaxSize:
                   description: CacheMaxSize is the maximum entries to keep in dnsmasq
                   type: integer
+                coreDNSAutoscalerImage:
+                  description: CoreDNSAutoscalerImage is used to override the default image
+                    used for CoreDNS Autoscaler
+                  type: string
                 coreDNSImage:
                   description: CoreDNSImage is used to override the default image
                     used for CoreDNS
