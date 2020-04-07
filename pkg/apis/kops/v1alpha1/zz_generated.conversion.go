@@ -3449,6 +3449,7 @@ func Convert_kops_KubeControllerManagerConfig_To_v1alpha1_KubeControllerManagerC
 func autoConvert_v1alpha1_KubeDNSConfig_To_kops_KubeDNSConfig(in *KubeDNSConfig, out *kops.KubeDNSConfig, s conversion.Scope) error {
 	out.CacheMaxSize = in.CacheMaxSize
 	out.CacheMaxConcurrent = in.CacheMaxConcurrent
+	out.CoreDNSAutoscalerImage = in.CoreDNSAutoscalerImage
 	out.CoreDNSImage = in.CoreDNSImage
 	out.Domain = in.Domain
 	out.ExternalCoreFile = in.ExternalCoreFile
@@ -3472,6 +3473,7 @@ func Convert_v1alpha1_KubeDNSConfig_To_kops_KubeDNSConfig(in *KubeDNSConfig, out
 func autoConvert_kops_KubeDNSConfig_To_v1alpha1_KubeDNSConfig(in *kops.KubeDNSConfig, out *KubeDNSConfig, s conversion.Scope) error {
 	out.CacheMaxSize = in.CacheMaxSize
 	out.CacheMaxConcurrent = in.CacheMaxConcurrent
+	out.CoreDNSAutoscalerImage = in.CoreDNSAutoscalerImage
 	out.CoreDNSImage = in.CoreDNSImage
 	out.Domain = in.Domain
 	out.ExternalCoreFile = in.ExternalCoreFile
