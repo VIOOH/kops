@@ -1613,7 +1613,7 @@ spec:
                   coreDNSAutoscalerImage:
                     description: CoreDNSAutoscalerImage is used to override the default image
                       used for CoreDNS Autoscaler
-                  type: string
+                    type: string
                   cpuRequest:
                     anyOf:
                     - type: integer
